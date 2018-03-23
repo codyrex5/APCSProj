@@ -2,7 +2,7 @@
 comment0.target=APCSProj
 comment1.params=
 comment1.target=APCSProj()
-comment2.params=e
+comment2.params=evt
 comment2.target=void\ mouseClicked(java.awt.event.MouseEvent)
 comment3.params=table
 comment3.target=void\ printDebugData(javax.swing.JTable)

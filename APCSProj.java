@@ -26,13 +26,57 @@ public class APCSProj extends JPanel {
         table.setPreferredScrollableViewportSize(new Dimension(700, 90));
         table.setFillsViewportHeight(true);
 
-        if (DEBUG) {
-            table.addMouseListener(new MouseAdapter() {
-                    public void mouseClicked(MouseEvent e) {
-                        printDebugData(table);
+        table.addMouseListener(new MouseAdapter() {
+                public void mouseClicked(MouseEvent evt) {
+                    int row = table.rowAtPoint(evt.getPoint());
+                    int col = table.columnAtPoint(evt.getPoint());
+                    if (row == 0 && col == 0){
+                    System.out.println("Playlist: https://open.spotify.com/user/spotify/playlist/37i9dQZF1DWU13kKnk03AP");
                     }
-                });
-        }
+                    if (row == 0 && col == 1){
+                    System.out.println("Playlist: https://open.spotify.com/user/digster.fr/playlist/2esHfruMW8rAZI2DxQCNcj");
+                    }
+                    if (row == 0 && col == 2){
+                    System.out.println("Playlist: https://open.spotify.com/user/spotify/playlist/37i9dQZF1DX0XUsuxWHRQd");
+                    }
+                    if (row == 0 && col == 3){
+                    System.out.println("Playlist: https://open.spotify.com/user/spotify/playlist/37i9dQZF1DX2sUQwD7tbmL");
+                    }
+                    if (row == 0 && col == 4){
+                    System.out.println("Playlist: https://open.spotify.com/user/spotify/playlist/37i9dQZF1DWSf2RDTDayIx");
+                    }
+                    if (row == 1 && col == 0){
+                    System.out.println("Playlist: https://open.spotify.com/user/spotify/playlist/37i9dQZF1DX3YSRoSdA634");
+                    }
+                    if (row == 1 && col == 1){
+                    System.out.println("Playlist: https://open.spotify.com/user/spotify/playlist/37i9dQZF1DWXs1L3AC0Xio");
+                    }
+                    if (row == 1 && col == 2){
+                    System.out.println("Playlist: https://open.spotify.com/user/spotify/playlist/37i9dQZF1DWT6MhXz0jw61");
+                    }
+                    if (row == 1 && col == 3){
+                    System.out.println("Playlist: https://open.spotify.com/user/spotify/playlist/37i9dQZF1DXbvABJXBIyiY");
+                    }
+                    if (row == 1 && col == 4){
+                    System.out.println("Playlist: https://open.spotify.com/user/spotify/playlist/37i9dQZF1DWTfrr8pte1rT");
+                    }
+                    if (row == 2 && col == 0){
+                    System.out.println("Playlist: https://open.spotify.com/user/spotify/playlist/37i9dQZF1DWTwnEm1IYyoj");
+                    }
+                    if (row == 2 && col == 1){
+                    System.out.println("Playlist: https://open.spotify.com/user/spotify/playlist/37i9dQZF1DX6xOPeSOGone");
+                    }
+                    if (row == 2 && col == 2){
+                    System.out.println("Playlist: https://open.spotify.com/user/spotify/playlist/37i9dQZF1DX7gIoKXt0gmx");
+                    }
+                    if (row == 1 && col == 3){
+                    System.out.println("Playlist: https://open.spotify.com/user/spotify/playlist/37i9dQZF1DX6ALfRKlHn1t");
+                    }
+                    if (row == 2 && col == 4){
+                    System.out.println("Playlist: https://open.spotify.com/user/spotify/playlist/37i9dQZF1DX6VdMW310YC7");
+                    }
+                }
+            });
 
         //Create the scroll pane and add the table to it.
         JScrollPane scrollPane = new JScrollPane(table);
